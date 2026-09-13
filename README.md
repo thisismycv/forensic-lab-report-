@@ -338,3 +338,6 @@ Memory image and web-server-log hashes were generated at collection time per the
 ## 12. Conclusion
 
 This exercise successfully reconstructed a complete attack chain — from initial exploitation of a vulnerable Apache server through credential theft, lateral movement, persistence, and exfiltration — using memory, disk, and cloud-log forensics. The root cause was a single over-scoped managed identity, which alone was sufficient to compromise a second, otherwise-isolated resource and exfiltrate its data. Completing the detection gap analysis in Section 8 against the SIEM/EDR alert data will indicate which stages of this chain are currently covered and where additional detection engineering is needed.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
